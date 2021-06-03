@@ -1,0 +1,53 @@
+<head>
+    <title>Mau kemane lu heh?</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        
+        #text {
+            text-transform: uppercase;
+            font-size: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="text"></p>
+    <script defer>
+        pass = prompt("Selamat malam, wahai pendududuk dunia.  Silahkan masukkan password")
+        if (pass == "04062021") {
+            name = prompt("Selamat datang username" + pass + ", masukkan nama dulu yak")
+            alert("Halo " + name)
+            kejutan = confirm("Mau kejutan ga?")
+            if (kejutan) {
+                alert("Nah, mantap nih.  Liat ampe akhir yak")
+                document.title = "Selamat Berjuang Kawan"
+                alert("Selamat KSN-k besok yaa, semangatt.  Kalau capek mah istirahat aja dulu atuh.  Baru gas lagi.  Kan mundur sedikit untuk melangkah lebih jauh (gatau hubungannya apaan, tapi pokoknya gitu deh).")
+                alert("Udah, selesai mbaa.  Sekiann, makasii udah mau bacaa ini random.  Hadiahnya cuma gini doang si sebenernyaa, tapi intinya kamu semangat besok.  Jaga kesehatan cuy, Semangat menjalani hidupp, Mijn Vriend")
+                asupan = confirm("Mau liat penjaga kawah Olympus gaa?")
+                if (asupan) {
+                    var movie = document.createElement("VIDEO")
+                    movie.setAttribute("src", "media/Video.mp4")
+                    movie.setAttribute("autoplay", "autoplay")
+                    movie.setAttribute("height", "720px")
+                    movie.setAttribute("width", "1080px")
+                    movie.setAttribute("id", "surprise")
+                    document.body.appendChild(movie);
+                    document.getElementById("surprise").style.borderRadius = "15px"
+                    document.getElementById("surprise").style.margin = "0 auto"
+                    document.getElementById("surprise").style.display = "block"
+                } else {
+                    alert("Yasudah, kalau ga mau.  Byee")
+                }
+            } else {
+                alert("yah, ga seru lu mba")
+            }
+        } else {
+            alert("Mohon maaf, tapi password yang anda masukkan salah")
+            document.getElementById("text").innerHTML = "Hahaha, salah password.  Ulangin cok"
+        }
+    </script>
+</body>
